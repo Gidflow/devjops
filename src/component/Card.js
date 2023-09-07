@@ -1,12 +1,12 @@
 import React from 'react';
 import "./component.css"
 
-const Card = ({data, logo}) => {
+const Card = ({data, logo, key}) => {
     const styles = {backgroundColor:data.logoBackground}
   return (
     <div className='card'>
       
-      <div key={data.id} >
+      <div key={key}>
         <div className='logo' style={styles}>
         <img  src={logo} alt="icon"  />
         </div>
