@@ -19,7 +19,7 @@ function App() {
     <div className='card-container'>
     {data.map(data=>{
       return <Card data = {data} key={data.id} logo={myImages.filter(str=>{
-        return str.includes(data.company.toLowerCase())
+        return str.includes(data.company.split(" ").join("").toLowerCase())
       })}/>
     })}
     </div>
